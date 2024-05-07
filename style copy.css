@@ -422,7 +422,6 @@ p {
 }
 .navbar-area.navbar-nine .navbar-brand {
   margin: 0;
-  margin-right: 16px;
 }
 .navbar-area.navbar-nine .navbar {
   position: relative;
@@ -751,12 +750,6 @@ p {
   background-color: var(--white);
 }
 
-.navbar-brand {
-  margin-right: 20px;
-}
-
-
-
 /*===== SIDEBAR ONE =====*/
 .sidebar-left {
   position: fixed;
@@ -950,13 +943,6 @@ p {
   color: var();
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
-  margin-top: 16px;
-}
-.header-eight .header-content .teks h4 {
-  font-weight: 400;
-  color: var(--primary);
-  text-shadow: 0px 3px 8px #00000017;
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
@@ -983,8 +969,8 @@ p {
 }
 .header-eight .primary-btn {
   margin-right: 12px;
-  background-color: var(#545BE8);
-  color: var(#ffffff);
+  background-color: var(--white);
+  color: var(--primary);
   border: 1px solid transparent;
 }
 .header-eight .primary-btn:hover {
@@ -1004,12 +990,12 @@ p {
 .header-eight .video-button .text {
   display: inline-block;
   margin-left: 15px;
-  color: var(--black);
+  color: var(--white);
   font-weight: 600;
 }
 .header-eight .video-button .icon-btn {
-  background: var(--caution);
-  color: var(--white);
+  background: var(--black);
+  color: var(--primary);
 }
 
 /*===========================
@@ -1629,22 +1615,6 @@ p {
   background: var(--gray-4);
   color: var(--dark-3);
   pointer-events: none;
-}
-
-.box-group{
-  display: flex;
-  justify-content: space-between;
-}
-
-.box1, .box2, .box3 {
-  width: 267px;
-  height: 267px;
-  background: #545BE8;
-  margin-right: 32px;
-  border-radius: 10px;
-}
-.box3 {
-  margin-right: 0;
 }
 
 /*======================================
