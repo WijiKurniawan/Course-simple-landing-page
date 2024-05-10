@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*===========================
   COMMON css 
 ===========================*/
 :root {
-  --font-family: "Inter", sans-serif;
+  --font-family: "Inter", sans-serif ;
+  --font-secondary: "Poppins", sans-serif;
   --primary: #155bd5;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
@@ -28,7 +31,7 @@
   --black: #1d1d1d;
   --dark-1: #2d2d2d;
   --dark-2: #4d4d4d;
-  --dark-3: #6d6d6d;
+  --dark-3: #393E46;
   --gray-1: #8d8d8d;
   --gray-2: #adadad;
   --gray-3: #cdcdcd;
@@ -399,7 +402,7 @@ p {
 
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
-  background: var(#ffffff);
+  background: var(--white);
   padding: 10px 0;
   position: absolute;
   left: 0;
@@ -431,7 +434,7 @@ p {
 .navbar-area.navbar-nine .navbar .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--black);
   margin: 5px 0;
   display: block;
   position: relative;
@@ -466,7 +469,7 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--white);
     z-index: 8;
     padding: 10px 16px;
   }
@@ -909,7 +912,14 @@ p {
 .header-eight .deactive.primary-btn {
   background: var(--gray-4);
   color: var(--dark-3);
+  box-shadow: var(--shadow-2);
   pointer-events: none;
+}
+
+.register-btn {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 /*======================================
@@ -918,7 +928,7 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(#F5F5F5);
+  background: var(--light-3);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -958,6 +968,9 @@ p {
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
 }
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
     font-size: 35px;
@@ -1016,20 +1029,67 @@ p {
   about-05 css
 ===========================*/
 .about-five {
-  background-color: var(--light-3);
+  background-color: var(--white);
   padding-top: 120px;
   padding-bottom: 90px;
 }
+
+.teks-about .first {
+  color: #545BE8;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+
+}
+
+.teks-about .second {
+  color: #141E32;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 291px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.teks-about .third {
+  color: #969696;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-five {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom:70px;
+    
+  }
+  .teks-about .second {
+    font-size: 30px;
+    width: 100%;
+  }
+  .teks-about .third {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
   .about-five {
     padding-top: 80px;
     padding-bottom:60px;
+
+  }
+  .teks-about .third {
+    margin-bottom: 20px;
   }
 }
 .about-five-content{
@@ -1160,6 +1220,51 @@ p {
   width: 100%;
   z-index: 2;
 }
+
+.box-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 400px;
+  height: 280px;
+  background: #545BE8;
+  margin-right: 32px;
+  border-radius: 10px;
+}
+
+
+.icon-box {
+  margin-right: 10px;
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.title-box {
+  margin-bottom: 8px;
+  margin-left: 16px;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  width: 196px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.content-box {
+  margin-left: 16px;
+  color: #ddd;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 226px;
+}
+
 
 
 /*===========================
@@ -1631,21 +1736,7 @@ p {
   pointer-events: none;
 }
 
-.box-group{
-  display: flex;
-  justify-content: space-between;
-}
 
-.box1, .box2, .box3 {
-  width: 267px;
-  height: 267px;
-  background: #545BE8;
-  margin-right: 32px;
-  border-radius: 10px;
-}
-.box3 {
-  margin-right: 0;
-}
 
 /*======================================
 	Contact CSS
@@ -1807,7 +1898,7 @@ p {
 .footer-eleven {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--white);
+  background-color: var(--dark-3);
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {

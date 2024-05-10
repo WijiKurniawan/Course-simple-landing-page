@@ -1002,7 +1002,7 @@ p {
   about-05 css
 ===========================*/
 .about-five {
-  background-color: var(--light-3);
+  background-color: var(--white);
   padding-top: 120px;
   padding-bottom: 90px;
 }
