@@ -2033,3 +2033,80 @@ p {
   gap: 16px; 
   /* untuk gap antar icon / flex */
 }
+
+.selected-course{
+  background-image: linear-gradient(to right, #545BE8, #272DB0);
+}
+
+.SELECTED-COURSE{
+  width: 171px;
+  height: 21.981px;
+  flex-shrink: 0;
+  color: #F0C932;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 280px;
+  margin-left: 100px;
+}
+
+.People-Taking-Courses{
+  width: 291px;
+  height: 119.896px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: -240px;
+  margin-left: 100px;
+}
+
+.isi{
+  width: 457px;
+  height: 80.93px;
+  flex-shrink: 0;
+  color: #DDD;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 100px;
+}
+
+.value-course{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.value{
+  width: 72px;
+  height: 28.975px;
+  flex-shrink: 0;
+  color: #F0C932;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-value{
+  width: 72px;
+  height: 28.975px;
+  flex-shrink: 0;
+  color: #DDD;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
