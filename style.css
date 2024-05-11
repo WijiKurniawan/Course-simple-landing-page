@@ -1921,7 +1921,7 @@ p {
 .footer-eleven .footer-widget h5 {
   font-weight: 700;
   margin-bottom: 35px;
-  color: var(--black);
+  color: var(--white);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .footer-eleven .footer-widget h5 {
@@ -1937,11 +1937,11 @@ p {
   }
 }
 .footer-eleven .f-about p {
-  color: var(--dark-3);
+  color: var(--white);
   margin-top: 20px;
 }
 .footer-eleven .f-about .copyright-text {
-  color: var(--dark-3);
+  color: var(--white);
   margin-top: 40px;
 }
 .footer-eleven .f-about .copyright-text span {
@@ -1953,10 +1953,10 @@ p {
   }
 }
 .footer-eleven .f-about .copyright-text a {
-  color: var(--primary);
+  color: var(--white);
 }
 .footer-eleven .f-about .copyright-text a:hover {
-  color: var(--primary-dark);
+  color: var(--white);
 }
 .footer-eleven .f-link li {
   display: block;
@@ -1966,7 +1966,7 @@ p {
   margin: 0;
 }
 .footer-eleven .f-link li a {
-  color: var(--dark-3);
+  color: var(--white);
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -1974,7 +1974,7 @@ p {
   transition: all 0.4s ease-out 0s;
 }
 .footer-eleven .f-link li a:hover {
-  color: var(--primary);
+  color: var(--white);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
   .footer-eleven .newsletter {
@@ -1982,7 +1982,7 @@ p {
   }
 }
 .footer-eleven .newsletter p {
-  color: var(--dark-3);
+  color: var(--white);
 }
 .footer-eleven .newsletter-form {
   margin-top: 30px;
@@ -1992,7 +1992,7 @@ p {
   height: 55px;
   width: 100%;
   border-radius: 8px;
-  border: 1px solid var(--gray-4);
+  border: 1px solid var(--white);
   box-shadow: none;
   text-shadow: none;
   padding-left: 18px;
@@ -2000,7 +2000,7 @@ p {
   transition: all 0.4s ease;
 }
 .footer-eleven .newsletter-form input:focus {
-  border-color: var(--primary);
+  border-color: var(--white);
 }
 .footer-eleven .newsletter-form .button {
   position: absolute;
@@ -2025,4 +2025,11 @@ p {
 .footer-eleven .newsletter-form .sub-btn:hover {
   color: var(--white);
   background-color: var(--primary-dark);
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 40px;
+  gap: 16px; 
+  /* untuk gap antar icon / flex */
 }
